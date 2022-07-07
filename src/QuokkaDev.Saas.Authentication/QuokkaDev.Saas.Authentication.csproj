@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageId>$(AssemblyName)</PackageId>
+		<Authors>QuokkaDev - </Authors>
+		<Company>QuokkaDev</Company>
+		<Description>Configure per-tenant authentication in QuokkaDev.Saas applications</Description>
+		<PackageProjectUrl>https://github.com/quokkadev/quokkadev-saas-authentication</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/quokkadev/quokkadev-saas-authentication</RepositoryUrl>
+		<PackageTags>library;c#;</PackageTags>		
+		<Copyright>QuokkaDev © 2022</Copyright>			
+		<PackageIcon>icon.png</PackageIcon>		
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="QuokkaDev.Saas.Abstractions" Version="1.0.2" />
+		<PackageReference Include="Roslynator.Analyzers" Version="4.1.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.1.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.39.0.47922">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+</Project>
