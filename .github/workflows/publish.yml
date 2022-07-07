@@ -77,10 +77,7 @@ jobs:
 
       - name: Run tests
         run: dotnet test --no-restore --verbosity normal --logger "trx;LogFileName=test-results.trx" --collect:"XPlat Code Coverage" --results-directory coverage -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover,cobertura
-   
-      - name: Run tests
-        run: dotnet test --no-restore --verbosity normal --logger "trx;LogFileName=test-results.trx" --collect:"XPlat Code Coverage" --results-directory coverage
-      
+    
       - name: Generate Unit Test Report
         uses: zyborg/dotnet-tests-report@v1
         with:          
