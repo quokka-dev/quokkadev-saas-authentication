@@ -36,16 +36,16 @@
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
-		<PackageReference Include="QuokkaDev.Saas.Abstractions" Version="1.0.2" />
-		<PackageReference Include="Roslynator.Analyzers" Version="4.1.0">
+		<PackageReference Include="QuokkaDev.Saas.Abstractions" Version="1.0.3" />
+		<PackageReference Include="Roslynator.Analyzers" Version="4.1.1">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.1.0">
+		<PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.1.1">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.39.0.47922">
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.41.0.50478">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
